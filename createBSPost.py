@@ -244,8 +244,8 @@ def twitter_post():
     with open('post.json') as postfile:
         postinfo = json.load(postfile)
 
-    posttext = f"NFL EloZone Update as of {formatted_time}: \n{postinfo['winning_team']} beat {postinfo['losing_team']} {postinfo['score']} \nSee more at https://eloball.pages.dev/ \n#MLB"
-    posttextX = f"NFL EloZone Update as of {formatted_time}: \n{postinfo['winning_team']} beat {postinfo['losing_team']} {postinfo['score']} \nSee more at https://eloball.pages.dev/ \n#MLB\n{mlb_team_hashtags[postinfo['winning_team']]}\n{mlb_team_hashtags[postinfo['losing_team']]}"
+    posttext = f"NFL EloZone Update as of {formatted_time}: \n{postinfo['winning_team']} beat {postinfo['losing_team']} {postinfo['score']} \nSee more at https://elozone.pages.dev/ \n#MLB"
+    posttextX = f"NFL EloZone Update as of {formatted_time}: \n{postinfo['winning_team']} beat {postinfo['losing_team']} {postinfo['score']} \nSee more at https://elozone.pages.dev/ \n#MLB\n{mlb_team_hashtags[postinfo['winning_team']]}\n{mlb_team_hashtags[postinfo['losing_team']]}"
 
 
     attempts = 0
